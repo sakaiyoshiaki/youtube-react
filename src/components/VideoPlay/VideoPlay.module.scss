@@ -1,0 +1,21 @@
+.wrap{
+  position: relative;
+  width: 100%;
+  &:before{
+    display: block;
+    content: '';
+    padding-top: 56.2%;
+  }
+  .video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+//(10)＜アスペクト比率(縦：横の割合)を一定に保ちながら、レスポンシブ対応する方法＞
+//l4:擬似要素beforeを使用。padding要素を%で追加することで高さの割合を一定にする
+//.videoでposition:absolute;を指定し、親要素(動画枠)に対して
+//高さ・横を0に指定し、そこから高さ・幅を100%にする
