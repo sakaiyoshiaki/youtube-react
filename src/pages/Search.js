@@ -21,6 +21,7 @@ const Search = () => {
 
   useEffect(() => {
     setSearchResult()
+    // eslint-disable-next-line
   },[location.search])
 
   return (

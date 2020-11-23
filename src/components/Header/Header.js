@@ -16,6 +16,7 @@ const Header = () => {
   }
   useEffect(() => {
     setTerm(globalState.term)
+    // eslint-disable-next-line
   },[])
   return (
     <div className={Style.header}>

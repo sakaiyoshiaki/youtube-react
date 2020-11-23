@@ -1,6 +1,7 @@
 import axios from 'axios'
 
-const KEY = 'AIzaSyAqOub5Gx_6WD26bKdUU3ksYANbvFTBBig'
+// const KEY = 'AIzaSyAqOub5Gx_6WD26bKdUU3ksYANbvFTBBig'
+  const KEY = 'AIzaSyDHQTY_0IrhXFHR9Uqe2-uUfORRYI9-DZY'
 //Yotube APIキーの取得
 const youtube = axios.create({
   baseURL: 'https://www.googleapis.com/youtube/v3'

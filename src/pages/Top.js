@@ -6,12 +6,12 @@ import { VideoGrid } from '../components/VideoGrid/VideoGrid'
 import VideoGridItem from '../components/VideoGridItem/VideoGridItem'
 const Top = () => {
   const { globalState, setGlobalState } = useContext(Store)
-
   useEffect(() => {
     fetchPopularData().then((res)=>{
       console.log('data',res)
       setGlobalState({type: 'SET_POPULAR', payload: {popular: res.data.items}})
     })
+// eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   return (

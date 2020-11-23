@@ -21,6 +21,7 @@ const Watch = () => {
 
   useEffect(() => {
     setVideos()
+    // eslint-disable-next-line
   },[location.search])
 
   return (
